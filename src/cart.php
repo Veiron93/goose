@@ -37,13 +37,13 @@
 
 										<div class="col-lg-2">
 											<div class="count">
-												<div class="count_btn count_btn-minus">
+												<div class="count_btn" data-action="minus">
 													<i class="fa fa-minus" aria-hidden="true"></i>
 												</div>
 												<div class="quantity">
-													<span>2</span>
+													<input type="text" value="1">
 												</div>
-												<div class="count_btn count_btn-plus">
+												<div class="count_btn" data-action="plus">
 													<i class="fa fa-plus" aria-hidden="true"></i>
 												</div>
 											</div>
@@ -69,6 +69,49 @@
 										</div>
 									</div>	
 								</div>
+
+								<div class="item">
+									<div class="row align-items-center">
+										<div class="col-lg-5">
+											<div class="name">
+												<p>Виски Jack Daniels, объём 0.7 л.</p>
+											</div>
+										</div>
+
+										<div class="col-lg-2">
+											<div class="count">
+												<div class="count_btn" data-action="minus">
+													<i class="fa fa-minus" aria-hidden="true"></i>
+												</div>
+												<div class="quantity">
+													<input type="text" value="1">
+												</div>
+												<div class="count_btn" data-action="plus">
+													<i class="fa fa-plus" aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="price">
+												<div class="advance">
+													<p class="zalog">Залог: <span>2000</span></p>
+													<p class="arenda">Аренда: <span>1500</span></p>
+												</div>
+
+												<div class="total">
+													<p>= <span>600</span> <span>руб.</span></p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-1">
+											<div class="del_item">
+												<i class="fa fa-times" aria-hidden="true"></i>
+											</div>
+										</div>
+									</div>	
+								</div> 
 						
 							</div>
 						</div>

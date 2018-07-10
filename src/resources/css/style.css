@@ -449,12 +449,17 @@ footer {
             font-size: 12px;
             line-height: 26px; }
         .cart .cart_list_tovars .item .count .quantity {
-          margin-left: 10px;
-          margin-right: 10px; }
-          .cart .cart_list_tovars .item .count .quantity span {
+          width: 24px;
+          text-align: center;
+          margin-left: 5px;
+          margin-right: 5px; }
+          .cart .cart_list_tovars .item .count .quantity input {
+            padding: 0;
             font-weight: bold;
             font-size: 18px;
-            line-height: 18px; }
+            text-align: center;
+            border: none;
+            color: #000; }
       .cart .cart_list_tovars .item .price {
         display: -webkit-box;
         display: -webkit-flex;
