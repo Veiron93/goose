@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="ru">
+<html lang="ru">   
 	<head>
 		<?php
 			$title = 'Аренда товаров в Южно-Сахалинске';
