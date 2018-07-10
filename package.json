@@ -1,0 +1,44 @@
+{
+  "name": "wedfaststart",
+  "version": "0.0.1",
+  "description": "fast start web project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veiron93/webfaststart.git"
+  },
+  "keywords": [
+    "html, web"
+  ],
+  "author": "Dmitry Yudin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veiron93/webfaststart/issues"
+  },
+  "homepage": "https://github.com/veiron93/webfaststart#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-minify": "0.0.15",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-robots": "^2.0.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sitemap": "^4.2.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2"
+  }
+}

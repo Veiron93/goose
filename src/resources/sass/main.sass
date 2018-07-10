@@ -1,0 +1,508 @@
+﻿.heading
+	margin-top: 30px
+	h1, h2, h3, h4
+		font-size: 30px
+		font-weight: bold
+
+
+// шапка
+header
+	height: 60px
+	border-bottom: 1px solid #e0e0e0
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+	.logo
+		height: 40px
+		width: 40px
+		border: 1px solid red
+		a
+			height: 100%
+			display: block
+			img
+
+
+
+	.description
+		h1
+			font-size: 14px
+			text-align: left
+
+	nav
+		display: flex
+		align-items: center
+		height: 100%
+
+		
+		ul
+			margin: 0 auto;
+			li
+				display: inline-block
+				margin-right: 20px
+				&:last-child
+					margin-right: 0
+				a
+					transition: color .3s
+					color: $text
+					
+
+					&:hover
+						color: $accent
+
+	.user_active
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		height: 100%
+
+		.user
+			display: flex
+			align-items: center
+			margin-right: 15px
+
+			.login, .log-out
+				height: 34px
+				background: $accent
+				text-align: center
+				box-shadow: 2px 2px 5px 0px rgba(227,106,41,0.6)
+				transition: background .3s
+				overflow: hidden
+
+				&:hover
+					background: $accent_hover
+
+				a
+					color: #fff
+					display: block
+					height: 100%
+					line-height: 34px
+					font-size: 14px
+					
+
+			.login
+				border-radius: 25px 8px 8px 25px
+				a
+					padding: 0px 15px
+
+
+			.log-out
+				border-radius: 8px 25px 25px 8px
+				margin-left: 3px
+				width: 34px
+
+
+				
+
+		.cart_btn
+			border-radius: 25px
+			height: 34px
+			border: 1px solid $accent
+			display: inline-block
+			overflow: hidden
+			a
+				line-height: 32px
+				margin-bottom: 0
+				color: $accent
+				font-size: 14px
+				display: block
+				height: 100%
+				padding: 0px 15px
+
+
+
+footer
+	margin-top: 80px
+	height: 40px
+	background: $dark
+
+
+.index_slider
+	background: $dark
+	padding-bottom: 10px
+	.item
+		height: 440px
+
+
+// OWL-CAROUSEL THEME
+.owl-dots
+	text-align: center
+
+	.owl-dot
+		height: 12px
+		width: 12px
+		background: #3d3d3d !important
+		border-radius: 50%
+		border: none
+		margin-left: 6px
+		&:first-child
+			margin-left: 0
+
+	.owl-dot.active
+		background: #fff !important
+
+
+// ШАГИ 
+.steps
+	.item
+		display: flex
+		align-items: center
+
+
+		.number
+			flex: none
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			text-align: center 
+			border: 1px solid $accent
+			margin-right: 10px
+			p
+				color: $accent
+				line-height: 29px
+
+		.text
+			p
+				font-size: 14px
+				font-weight: bold
+
+
+// КАРТОЧКА ТОВАРА
+.tovar_card
+	padding: 10px 0
+	.photo
+		text-align: center
+		margin-bottom: 5px
+		img
+			height: 220px
+			max-width: 100%
+
+	.name
+		margin-bottom: 10px
+		p
+			font-weight: bold
+
+	.buy
+		display: flex
+		justify-content: space-between
+		align-items: center
+		
+		.price 
+			.total
+				p
+					font-size: 30px
+					font-weight: bold
+					margin-bottom: 0
+					line-height: 30px
+					span
+						font-size: 16px
+						font-weight: bold
+						margin-left: 5px
+
+
+			.other
+				margin-top: -3px
+				p
+					font-size: 11px
+					display: inline-block
+					color: $gray_light
+					span
+						font-size: 10px
+						margin-left: 3px   
+
+
+
+		.add_cart
+			border: 1px solid $accent
+			height: 36px
+			border-radius: 18px
+			cursor: pointer
+			transition: .3s
+			p
+				padding: 0 15px
+				color: $accent
+				line-height: 36px
+				font-size: 14px
+
+			&:hover
+				background: $accent
+				p
+					color: #fff
+
+// ЗАГОЛОВОК КАТЕГОРИИ
+.heading_catalog
+	height: 32px
+	border-radius: 8px 18px 18px 8px
+	background: $accent
+	padding: 
+		left: 10px
+		right: 4px
+	width: 130px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	.name
+		p
+			color: #fff
+			text-transform: uppercase
+	.icon
+		height: 24px
+		width: 24px
+		background: #fff
+		border-radius: 50%
+		text-align: center
+
+		img
+			margin-top: 4px
+			height: 16px
+
+
+
+// КАК МЫ РАБОТАЕМ
+.how_we_work
+	padding-top: 80px
+	padding-bottom: 70px
+	.heading
+		color: $accent
+		margin-top: 0
+
+	.steps
+		margin-top: 25px
+		margin-bottom: 30px
+
+	.description
+		.btn
+			width: 120px 
+			display: block
+			margin: 25px auto 0
+
+
+// КАТАЛОГ
+
+.catalog
+	padding-top: 25px
+	.heading_catalog
+		margin-bottom: 15px
+	.description_catalog
+		margin-bottom: 40px
+		p
+			font-size: 14px
+
+
+
+// КОРЗИНА
+.cart
+	margin-top: 30px
+
+	.cart_list_tovars
+		margin-top: 30px
+		.item
+			padding: 15px 0
+			border-bottom: 1px solid #E0E0E0
+
+			&:first-child
+				border-top: 1px solid #E0E0E0
+
+
+			.name
+				p
+					font-weight: bold
+					font-size: 16px
+					margin-bottom: 0
+
+			.count
+				display: flex
+				align-items: center
+
+				.count_btn
+					flex: none
+					height: 26px
+					width: 26px
+					border-radius: 50%
+					border: 1px solid $accent
+					text-align: center
+					cursor: pointer
+					i
+						color: $accent
+						font-size: 12px
+						line-height: 26px
+
+				.quantity
+					margin: 
+						left: 10px
+						right: 10px
+					span
+						font-weight: bold
+						font-size: 18px
+						line-height: 18px
+
+
+			.price
+				display: flex
+				align-items: center
+
+				.advance
+					width: 100px
+					p
+						font-size: 13px
+						color: $gray_light
+						span
+							font-size: 13px
+
+
+				.total
+					display: flex
+
+					p
+						font-size: 24px 
+						font-weight: bold
+						span
+							font-weight: bold
+
+							&:nth-child(1)
+								font-size: 24px
+													
+							&:nth-child(2)
+		
+
+
+
+
+			.del_item
+				height: 26px
+				width: 26px
+				border: 1px solid $gray
+				text-align: center
+				border-radius: 50%
+				line-height: 26px
+				cursor: pointer
+				transition: border-color .3s
+				i
+					color: $gray
+					transition: color .3s
+
+				&:hover
+					border-color: $accent
+					i
+						color: $accent
+
+
+	.cart_price
+		.warning_text
+			margin-top: 25px
+			font-size: 14px
+			p
+				font-size: 16px
+				a
+					color: $accent
+					font-size: 16px
+
+		.form_order
+			margin-top: 25px
+
+			input
+				margin-bottom: 10px
+
+			textarea
+
+		.paper_check
+			padding: 15px 10px
+			margin-top: 25px
+			background: #f5f5f5
+			box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+			border-radius: 8px
+
+			p
+				padding: 3px 0px
+				margin-bottom: 10px
+				border-bottom: 1px dashed $gray
+				font-size: 14px
+				span
+					font-size: 14px
+					font-weight: bold
+					float: right
+
+			button
+				width: 100%
+				display: block
+				margin: 25px auto 0
+
+
+// РЕГИСТРАЦИЯ
+.registration
+	.heading
+		text-align: center
+		margin-bottom: 20px
+
+	form
+		padding: 0px 30px
+		label
+			font-size: 14px
+
+
+		.conditions
+			display: flex
+			align-items: center
+			margin-top: 20px
+			label
+				font-size: 14px 
+				margin: 0 0 0 10px
+				cursor: pointer
+
+			
+
+		button
+			margin-top: 30px
+			width: 100%
+
+
+.sign-in
+	.heading
+		text-align: center
+
+
+	form
+		padding: 0 50px
+		label
+			font-size: 14px
+
+		button
+			width: 100%
+			margin-top: 30px
+
+
+.reset-password
+	.heading
+		text-align: center
+		margin-bottom: 20px
+
+
+	form
+		padding: 0 50px
+		label
+			font-size: 14px
+
+		button
+			width: 100%
+			margin-top: 30px
+
+
+.new-password
+	.heading
+		text-align: center
+		margin-bottom: 20px
+
+
+	form
+		padding: 0 50px
+		label
+			font-size: 14px
+
+		button
+			width: 100%
+			margin-top: 30px
+
+
+
+
+

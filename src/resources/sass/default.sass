@@ -1,0 +1,98 @@
+html, body
+	height: 100%
+	margin: 0
+	padding: 0
+	position: relative
+
+body
+	opacity: 1
+
+p, a, li, h1, h2, h3, h4, h5, h6, select, span, textarea, input, label, small, button
+	font:
+		family: 'ProximaNova', sans-serif
+		size: 16px
+		weight: 400
+	margin: 0
+	line-height: 1.4
+
+a 
+	text-decoration: none
+	outline: none
+	&:hover
+		text-decoration: none
+	&:focus 
+		outline: none
+		text-decoration: none
+		
+ul 
+	margin: 0
+	padding: 0
+	list-style: none
+
+form
+	width: 100%
+
+input, select, textarea, button
+	&:focus
+		outline: none
+
+input, select, textarea
+	transition: border-color .2s
+	border-radius: 3px
+	width: 100%
+	border: 1px solid #b3b3b3
+	color: $accent
+
+	&::-webkit-input-placeholder
+		color: #b3b3b3
+	&::-moz-placeholder
+		color: #b3b3b3
+	&:-moz-placeholder
+		color: #b3b3b3
+	&:-ms-input-placeholder
+		color: #b3b3b3
+	&:focus
+		border-color: $accent
+
+input, select
+	height: 36px
+	padding: 0 10px
+
+
+input[type="checkbox"]
+	height: 16px
+	width: 16px
+
+
+textarea
+	transition: none
+	resize: vertical
+	padding: 5px 10px
+
+button
+	border: none 
+	&.btn
+		padding: 0px 20px
+		color: #fff
+
+label 
+	display: block
+	margin:
+		top: 10px
+		bottom: 4px
+
+
+
+table
+	width: 100%
+
+.wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
+
+.content
+	flex: 1 0 auto
+
+footer
+	flex: 0 0 auto
